@@ -183,6 +183,7 @@ typedef NS_ENUM(NSUInteger, FSCalendarOrientation) {
     
     _pagingEnabled = YES;
     _scrollEnabled = YES;
+    _allowsScrollingOnSelection = YES;
     _needsAdjustingViewFrame = YES;
     _needsRequestingBoundingDates = YES;
     _orientation = self.currentCalendarOrientation;
@@ -1114,7 +1115,7 @@ typedef NS_ENUM(NSUInteger, FSCalendarOrientation) {
 
 - (void)selectDate:(NSDate *)date
 {
-    [self selectDate:date scrollToDate:YES];
+    [self selectDate:date scrollToDate:self.allowsScrollingOnSelection];
 }
 
 - (void)selectDate:(NSDate *)date scrollToDate:(BOOL)scrollToDate

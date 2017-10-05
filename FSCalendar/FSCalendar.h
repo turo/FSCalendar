@@ -384,6 +384,11 @@ IB_DESIGNABLE
 @property (assign, nonatomic) IBInspectable BOOL allowsMultipleSelection;
 
 /**
+ A Boolean value that determines whether the calendar scrolls on selection
+ */
+@property (assign, nonatomic) IBInspectable BOOL allowsScrollingOnSelection;
+
+/**
  A Boolean value that determines whether paging is enabled for the calendar.
  */
 @property (assign, nonatomic) IBInspectable BOOL pagingEnabled;
