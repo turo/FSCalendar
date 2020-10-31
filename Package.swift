@@ -22,8 +22,5 @@ let package = Package(
             name: "FSCalendar",
             dependencies: [],
             exclude: ["Info.plist"]),
-        .testTarget(
-            name: "FSCalendarTests",
-            dependencies: ["FSCalendar"]),
     ]
 )
