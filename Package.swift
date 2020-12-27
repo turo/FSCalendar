@@ -21,6 +21,11 @@ let package = Package(
         .target(
             name: "FSCalendar",
             dependencies: [],
-            exclude: ["Info.plist"]),
+            exclude: ["Info.plist"],
+            linkerSettings: [
+                //Frameworks
+                .linkedFramework("libobjc"),
+            ]
+            )
     ]
 )
